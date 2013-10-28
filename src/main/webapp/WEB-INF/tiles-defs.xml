@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 
+  <definition name="template" template="/WEB-INF/jsp/template.jsp">
+    <put-attribute name="title" value="Configuration Center" />
+    <put-attribute name="header" value="/header.ftl" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+  </definition>
+   
+   <!-- 
+   <definition name="template" template="/WEB-INF/jsp/template.jsp">
+    <put-attribute name="title" value="Configuration Center" />
+    <put-attribute name="header" value="/header.ftl" />
+    <put-attribute name="body" value="/WEB-INF/jsp/menuBody.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    <put-attribute name="leftMenu" value="/userGroupList.ftl" cascade="true" />  
+    <put-attribute name="rightPanel" value="/WEB-INF/jsp/empty.jsp" cascade="true" />
+  </definition>
+   -->
+  <definition name="login.tile" extends="template">  
+    <put-attribute name="title" value="Signin Configuration Center"/>  
+    <put-attribute name="body" value="/login.ftl"/>  
+  </definition>
+  
+   <definition name="register.tile" extends="template">
+   <put-attribute name="title" value="Register Configuration Center"/>
+    <put-attribute name="body" value="/register.ftl"/>  
+  </definition>
+  <definition name="errorView.tile" extends="template">
+    <put-attribute name="body" value="/errorView.ftl"/>  
+  </definition>
+  <definition name="home.tile" extends="template">
+    <put-attribute name="body" value="/home.ftl"/>  
+  </definition>
+   <definition name="editProfile.tile" extends="template">
+    <put-attribute name="body" value="/editProfile.ftl"/>  
+  </definition>
+  <!-- 
+  <definition name="viewUserGroups.tile" extends="template">
+    <put-attribute name="body" value="/viewUserGroups.ftl"/>  
+  </definition>
+  <definition name="editUserGroup.tile" extends="template">
+    <put-attribute name="body" value="/editUserGroup.ftl"/>  
+  </definition>
+    <definition name="createUserGroup.tile" extends="template">
+    <put-attribute name="body" value="/editUserGroup.ftl"/>  
+  </definition>
+   -->
+   <definition name="viewNameSpaces.tile" extends="template">
+    <put-attribute name="body" value="/viewNameSpaces.ftl"/>  
+  </definition>
+  <!-- 
+ <definition name="userGroups.tile" extends="template">
+      	<put-attribute name="leftMenu" value="/userGroupList.ftl"/>  
+    	<put-attribute name="rightPanel" value="/WEB-INF/jsp/empty.jsp"/>
+  </definition>
+  <definition name="updateUserGroup.tile" extends="template">
+    <put-attribute name="leftMenu" value="/userGroupList.ftl"/>  
+    	<put-attribute name="rightPanel" value="/editUserGroup.ftl"/>
+  </definition>
+   -->
+  <definition name="userGroups.tile" extends="template">
+      	<put-attribute name="body" value="/userGroups.ftl"/>  
+  </definition>
+  <definition name="nameSpaces.tile" extends="template">
+      	<put-attribute name="body" value="/nameSpaces.ftl"/>  
+  </definition>
+  
+  <definition name="editPropertySet.tile" template="/WEB-INF/jsp/editPropertySet.jsp">
+     <put-attribute name="propertySetProfile" value="/editPropertySetProfile.ftl" />
+     <put-attribute name="PropertyList" value="/editProperties.ftl" />
+  </definition>
+</tiles-definitions>

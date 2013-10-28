@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.fang.test.configurecenter.vo">
+	<!-- 
+	<query name="findAllGoods" fetch-size="50" read-only="true">
+	<![CDATA[from Goods ]]>
+	</query>
+	 -->
+</hibernate-mapping>

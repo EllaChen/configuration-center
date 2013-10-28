@@ -1,0 +1,21 @@
+#registerDiv{
+   	top:40px;
+   	width: 600px;
+   	/*height:200px;*/
+   	border:1px;
+   	margin:40px auto 40px auto;
+	padding: 40px 40px 40px 40px;
+	background: #E0E0E0;
+	border-radius:10px;
+	box-shadow: 5px 5px 3px #D4D4D4;
+	-moz-border-radius:10px; /* old Firefox */
+	-moz-box-shadow: 5px 5px 3px #D4D4D4;
+
+}
+.registerTb{
+	font-size:12px;
+	font-weight:bold;
+}
+span.red{
+	color: red;
+}
