@@ -59,7 +59,6 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 
 		authList.add(new SimpleGrantedAuthority("ROLE_USER"));
 
-		// 如果参数access为1.则拥有ROLE_ADMIN权限
 		if (access >= 1 ) {
 			authList.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
 		}
