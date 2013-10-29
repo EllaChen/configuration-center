@@ -21,7 +21,7 @@
 		<property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }" />
 		<property name="initialSize" value="5" />
 		<property name="maxActive" value="10" />
-		<property name="driverClassName" value="org.postgresql.Driver" /> <property
+		<property name="driverClassName" value="org.postgresql.Driver" /> 
 	</bean>
 
 	<!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"> 
