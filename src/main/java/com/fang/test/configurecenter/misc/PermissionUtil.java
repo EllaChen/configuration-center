@@ -32,7 +32,7 @@ public class PermissionUtil {
 	public static boolean isUserWritable(Long userId, Permissions pem,
 			User owner, UserGroup userGroup) {
 		boolean writable = false;
-		if (pem.isOtherUserWritable()) {
+		if (pem.isOtherUserWritable() && userId != null) {
 			writable = true;
 		}else if (userId != null) {
 			if (owner.getId() == userId && pem.isOwnerWritable()) {
