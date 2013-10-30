@@ -2,7 +2,7 @@
 		<form name="editUserGroupForm" class="form-horizontal form-editUsrGrp" method="POST" action="editUserGroup">
 		<input type="hidden" name="act" value="${act}"/>
 			[#if error??]
-			    <div class="alert">
+			    <div class="alert alert-error">
 				    <button type="button" class="close" data-dismiss="alert">&times;</button>
 				    <strong>Error:</strong>${error}
 			    </div>

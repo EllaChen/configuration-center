@@ -7,6 +7,10 @@ td{
 }
 </style>
 <div class="span12">
+	<div class="alert alert-info">
+	    <button type="button" class="close" data-dismiss="alert">&times;</button>
+	    <strong>Information:</strong> If you need to edit the name space, please login first.
+    </div>
 	<table class="table table-bordered table-profile">
 	<caption>Name Space Profile</caption>
 		<tr>

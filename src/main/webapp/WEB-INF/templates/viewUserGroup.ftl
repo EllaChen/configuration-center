@@ -1,3 +1,8 @@
+<div class="span12">
+	<div class="alert alert-info">
+	    <button type="button" class="close" data-dismiss="alert">&times;</button>
+	    <strong>Information:</strong> If you need to edit the user group, please login first.
+    </div>
 <table>
 	<tr>
 		<td>Name:</td>
@@ -23,3 +28,4 @@
 	[/#list]
 [/#if]
 </table>
+</div>
